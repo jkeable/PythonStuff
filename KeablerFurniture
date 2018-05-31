@@ -1,0 +1,36 @@
+#Lovely Loveseat info (Description + Price)
+lovely_loveseat_description = "Lovely Loveseat. Tufted polyester blend on wood. 32 inches high x 40 inches wide x 30 inches deep. Red or white."
+lovely_loveseat_price = float(254.00)
+#Stylish Settee info (Description + Price)
+stylish_settee_description = "Stylish Settee. Faux leather on birch. 29.50 inches high x 54.75 inches wide x 28 inches deep. Black."
+stylish_settee_price = float(180.50)
+#Luxurious Lamp info (Description + Price)
+luxurious_lamp_description = "Luxurious Lamp. Glass and iron. 36 inches tall. Brown with cream shade."
+luxurious_lamp_price = float(52.15)
+#Tax
+sales_tax = float(.088)
+#Customer One Purchase Info (Total and Itemization)
+customer_one_total = float(0)
+customer_one_total = lovely_loveseat_price + luxurious_lamp_price + sales_tax
+customer_one_itemization = lovely_loveseat_description + luxurious_lamp_description
+#Tax Calc
+customer_one_tax = customer_one_total * sales_tax
+#Recipt
+print ("Customer One Items:")
+print (customer_one_itemization)
+print("\n")
+print ("Customer One Total:")
+print (customer_one_total)
+print("\n")
+#Customer Two Purchase Info (Total and Itemization)
+customer_two_total = float(0)
+customer_two_total = stylish_settee_price + luxurious_lamp_price
+customer_two_itemization = stylish_settee_description + luxurious_lamp_description
+#Tax Calc
+customer_two_tax = customer_two_total * sales_tax
+#Recipt
+print ("Customer Two Items:")
+print (customer_two_itemization)
+print ("\n")
+print ("Customer Two Total:")
+print (customer_two_total)
